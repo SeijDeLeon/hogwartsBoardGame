@@ -11,9 +11,9 @@ function App() {
   var [activePlayer, updateActivePlayer] = useState(playerList[0]);
   return (
     <div className="App">
-      <PlayerList playerList = {playerList} activePlayer = {activePlayer} updatePlayerList = {updatePlayerList}/>
-      <Action activePlayer = {activePlayer} updateActivePlayer = {updateActivePlayer}/>
       <Board playerList = {playerList}/>
+      <Action activePlayer = {activePlayer} updateActivePlayer = {updateActivePlayer}/>
+      <PlayerList playerList = {playerList} activePlayer = {activePlayer} updatePlayerList = {updatePlayerList}/>
     </div>
   );
 }
